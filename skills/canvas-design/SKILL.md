@@ -23,10 +23,12 @@ Use the user's explicit target and existing project as evidence. Inspect manifes
 | Requested surface | Read when relevant | Decisions that change |
 | --- | --- | --- |
 | Website or browser web app | [web-apps.md](references/web-apps.md) | Page hierarchy versus task flows, browser history, forms, and data states |
-| Mobile app, including Flutter or MAUI | [mobile-apps.md](references/mobile-apps.md) | Touch, safe areas, back behavior, keyboard, and lifecycle |
-| Desktop app, including Avalonia, MAUI, JavaFX, Swing, or Flutter | [desktop-apps.md](references/desktop-apps.md) | Window layout, keyboard commands, native resources, and UI threading |
+| Mobile app | [mobile-apps.md](references/mobile-apps.md) | Touch, safe areas, back behavior, keyboard, and lifecycle |
+| Desktop app | [desktop-apps.md](references/desktop-apps.md) | Window layout, keyboard commands, native resources, and UI threading |
 
-Read only the lanes needed for the requested targets. Flutter web uses web guidance plus relevant Flutter notes; a MAUI phone app uses mobile guidance plus the MAUI notes in desktop-apps.md. For another toolkit, transfer the design method and consult its official documentation for implementation details. These references do not promise exhaustive framework expertise.
+Read only the lanes needed for the requested targets. Read [toolkit-adapters.md](references/toolkit-adapters.md) for Kotlin/Compose, Swift/Apple UI, Electron/Tauri, other major UI families, or a toolkit not covered by the platform references. Identify the language, UI toolkit, runtime, and requested targets separately; a language alone does not identify the interface technology.
+
+Flutter web uses web guidance plus relevant Flutter notes; a MAUI phone app uses mobile guidance plus the MAUI notes in desktop-apps.md. Electron uses web and desktop guidance plus its toolkit adapter. For any other toolkit, apply the documented adaptation workflow and consult official documentation for the project's version. The method is open to any UI stack; detailed notes and runtime verification are not exhaustive guarantees.
 
 If "app" is ambiguous and the project gives no answer, ask where people will use it: a browser, a phone installation, or a desktop window. Recommend a stack only when none is specified, with a concrete reason tied to delivery. Preserve an existing stack; do not silently migrate or wrap a website in a WebView to claim native support.
 

@@ -29,7 +29,7 @@ Inspect pubspec.yaml, the SDK constraints, assets, routing, and existing theme/s
 - Use a navigation stack for a simple flow; consider declarative routing for addressable screens, complex navigation, or deep links. An existing router should not be replaced merely because a reference recommends a package.
 - Prefer lazy collections for large data sets. Keep expensive work out of rendering and preserve state intentionally across screen transitions.
 
-For a MAUI mobile project, also read the MAUI row in [desktop-apps.md](desktop-apps.md); that section contains toolkit guidance shared by its mobile and desktop targets. For React Native, SwiftUI, or Compose, use equivalent native layout, navigation, semantics, and lifecycle facilities rather than translating HTML literally.
+For a MAUI mobile project, also read the MAUI row in [desktop-apps.md](desktop-apps.md); that section contains toolkit guidance shared by its mobile and desktop targets. For Kotlin/Compose, SwiftUI/UIKit, React Native/Expo, or hybrid apps, read the relevant section of [toolkit-adapters.md](toolkit-adapters.md). Use actual toolkit layout, navigation, semantics, and lifecycle facilities rather than translating HTML literally.
 
 ## Evidence
 

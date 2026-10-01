@@ -84,7 +84,18 @@ Canvas Design shares one discovery and creative-direction process, then loads on
 | Mobile apps | Touch, navigation/back behavior, safe areas, keyboard avoidance, text scaling, and relevant persistence/lifecycle behavior. |
 | Desktop applications | Resizable windows, density, focus, shortcuts, native resources, editing states, and UI-thread responsiveness. |
 
-Focused toolkit notes cover **Flutter, .NET MAUI, Avalonia, JavaFX, and Swing**. Other toolkits can use the shared method with their official documentation. This is design and implementation guidance, not a replacement for framework expertise, installed SDKs, or actual target testing.
+Focused toolkit notes cover the major families below, with an adaptation workflow for **any other requested UI toolkit**. The skill identifies language, UI technology, runtime, and targets separately, so Kotlin does not automatically mean Android and JavaScript does not automatically mean a website.
+
+| Family | Included direction |
+| --- | --- |
+| Kotlin | Android Views/XML, Jetpack Compose, and Compose Multiplatform distinctions. |
+| Swift / Apple UI | SwiftUI, UIKit, and AppKit; mobile versus windowed behavior and deployment-target checks. |
+| Web and hybrid shells | Electron, Tauri, Ionic/Capacitor, and PWA; native integration boundaries and actual-runtime review. |
+| Cross-platform apps | Flutter, React Native/Expo, .NET MAUI, and Avalonia. |
+| Desktop toolkits | JavaFX, Swing, WPF, WinUI, Windows Forms, Qt/PySide/PyQt, GTK, and Tkinter/ttk. |
+| Browser frameworks | Plain HTML/CSS/JS, React, Vue, Svelte, Angular, Blazor, and other existing web stacks. |
+
+Coverage means design and implementation guidance that adapts to the project. It does not mean every API is documented here, every framework supports every OS, or every target has been tested. See [toolkit adapters](skills/canvas-design/references/toolkit-adapters.md) for the focused notes and official references.
 
 ```text
 $canvas-design Build a Flutter journal for Android with a blue dragon
@@ -113,6 +124,8 @@ If the request is vague, the skill asks a few consequential questions. If the ta
 | [Vercel web-design-guidelines](https://github.com/vercel-labs/agent-skills/blob/main/skills/web-design-guidelines/SKILL.md) | Browser interface, focus, form, and semantic-control checks. |
 | [David Ortinau's MAUI skills](https://github.com/davidortinau/maui-skills) | Distinct mobile and desktop input ergonomics. |
 | [Wieslaw Soltes's Avalonia development plugin](https://github.com/wieslawsoltes/development-plugin-for-avalonia) | Reusable styling resources, shell design, and intentional theme selection. |
+| [Android adaptive Compose skill](https://developer.android.com/agents/skills/jetpack-compose/adaptive/skill) | Adaptive layout and navigation decisions with explicit project prerequisites. |
+| [Antoine van der Lee's SwiftUI Expert Skill](https://github.com/AvdLee/SwiftUI-Agent-Skill/blob/main/skills/swiftui-expert-skill/SKILL.md) | State ownership and selective version-compatible implementation guidance. |
 
 The extension uses original instruction writing and source attribution. These collections are optional references, not installed dependencies. JavaFX and Swing implementation notes use official documentation. See [research and provenance](skills/canvas-design/references/sources.md) for exact files, licensing evidence, and limitations.
 
@@ -179,6 +192,7 @@ skills/canvas-design/
     mobile-apps.md             Handheld workflows and Flutter notes
     desktop-apps.md            Windowed apps and native toolkit notes
     sources.md                 Research provenance and limitations
+    toolkit-adapters.md        Kotlin, Swift, Electron, other UI families
 tests/scenarios.md            Manual routing/discovery walkthroughs
 examples/dragon-portfolio/     Complete three-page website
 demo/                         Desktop and mobile screenshots

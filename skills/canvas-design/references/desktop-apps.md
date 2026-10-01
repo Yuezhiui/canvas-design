@@ -24,6 +24,8 @@ For document or editing tasks, define save, unsaved-change, undo, and close beha
 
 These are focused design and implementation reminders, not complete engineering specifications. JavaFX CSS is not browser CSS; Swing has no browser DOM. Do not swap toolkits to use a favored library. Choose third-party themes only when compatible and justified. Fluent styling is appropriate when selected; it is not an automatic Avalonia or MAUI requirement.
 
+For Electron/Tauri, SwiftUI/AppKit, Compose Multiplatform, Windows toolkits, Qt, GTK, or Python UI, read the matching section of [toolkit-adapters.md](toolkit-adapters.md). Combine the native/runtime details with this desktop workflow; browser rendering alone does not verify a desktop shell.
+
 Translate the shared concept into native resources and controls. Paper texture may belong behind an illustration workspace; it should not obscure a data grid. Keep icon shapes, stroke weight, type hierarchy, and state treatment consistent. Store supplied/generated artwork in the toolkit's resource system and verify the packaged app can load it.
 
 ## Evidence
