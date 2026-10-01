@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#f5f3eb"><meta name="description" content="Meet Yue, the artist behind a sketchbook of blue-ink dragons."><title>About — Yue</title>
+  <link rel="icon" href="assets/mark.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css"><script src="profile.js" defer></script><script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header"><a class="wordmark ink-hover" href="index.html" aria-label="Yue, home"><span class="profile-name">Yue</span><span class="wordmark-star" aria-hidden="true">✳</span></a><nav aria-label="Main navigation"><a class="ink-hover" href="index.html">Home</a><a class="ink-hover" href="work.html">Sketchbook</a><a class="ink-hover" href="about.html" aria-current="page">About</a></nav><span class="header-note">a little world in blue</span></header>
+  <main id="main" class="page-shell">
+    <section class="about-layout">
+      <div class="about-visual"><div class="art-sheet about-sheet"><span class="paper-tape" aria-hidden="true"></span><img src="assets/dragon-coil.png" width="768" height="1376" alt="Yue's intricate blue-ink coiled dragon drawing."></div><span class="hand-note">a few lines, a whole creature.</span></div>
+      <div class="about-copy"><p class="eyebrow">Behind the sketchbook</p><h1>Hello,<br>I’m <em class="profile-name">Yue.</em></h1><p class="about-role profile-role">Artist</p><p class="about-intro">This is my little collection of blue-ink dragons. A place for curious creatures, winding lines, and a closer look at the details.</p><p>For fellow art lovers, curious wanderers, and people with something imaginative in mind: welcome. There’s always another page to turn.</p><div class="about-signature" aria-hidden="true"><span class="profile-name">Yue</span><svg viewBox="0 0 130 30"><path d="M3 18c39-19 63 8 117-9M11 25c35-12 73-5 101-13"/></svg></div><a class="sketch-button" href="work.html"><span>See the drawings</span><span class="button-arrow" aria-hidden="true">↗</span></a><a class="contact-link ink-hover" data-contact hidden href="#">Say hello ↗</a></div>
+    </section>
+    <section class="ink-play" aria-labelledby="ink-play-title"><div><p class="eyebrow">A small invitation</p><h2 id="ink-play-title">Leave a little <em>line.</em></h2><p>Draw something here. A scale, a swirl, a very tiny dragon.</p></div><div class="drawing-pad-wrap"><canvas id="drawing-pad" aria-label="Optional blue-ink drawing pad. Drag with your mouse or finger to draw." role="img"></canvas><span class="pad-hint hand-note" aria-hidden="true">your turn…</span></div><div class="pad-tools"><button class="ink-hover" id="clear-pad" type="button">Fresh page ↺</button><button class="ink-hover" id="save-pad" type="button">Save your sketch ↓</button></div><p class="pad-status" role="status" aria-live="polite"></p></section>
+  </main>
+  <footer class="site-footer page-shell"><span>Made of paper & imagination.</span><button class="trail-toggle ink-hover" type="button" aria-pressed="true">Ink trail <span class="trail-status">on</span><span class="toggle-dot" aria-hidden="true"></span></button><span>© <span class="profile-name">Yue</span></span></footer>
+  <canvas id="ink-trail" aria-hidden="true"></canvas>
+</body>
+</html>

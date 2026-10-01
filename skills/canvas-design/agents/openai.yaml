@@ -1,0 +1,4 @@
+interface:
+  display_name: "Canvas Design"
+  short_description: "Discover, direct, and build distinctive websites"
+  default_prompt: "Use $canvas-design to develop my website brief, resolve important unknowns, and create a tailored master prompt or website."

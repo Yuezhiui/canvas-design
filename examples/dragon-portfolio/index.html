@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Yue's blue-ink dragon sketchbook. Explore original drawings, quiet details, and a little imagination.">
+  <meta name="theme-color" content="#f5f3eb"><title>Yue — A dragon sketchbook</title>
+  <link rel="icon" href="assets/mark.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css">
+  <script src="profile.js" defer></script><script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="wordmark ink-hover" href="index.html" aria-label="Yue, home"><span class="profile-name">Yue</span><span class="wordmark-star" aria-hidden="true">✳</span></a>
+    <nav aria-label="Main navigation"><a class="ink-hover" href="index.html" aria-current="page">Home</a><a class="ink-hover" href="work.html">Sketchbook</a><a class="ink-hover" href="about.html">About</a></nav>
+    <span class="header-note">a little world in blue</span>
+  </header>
+  <main id="main">
+    <section class="hero page-shell">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="little-line" aria-hidden="true"></span><span class="profile-name">Yue</span> / <span class="profile-role">Artist</span></p>
+        <h1>A little ink.<br>A lot of<br><em>imagination.</em></h1>
+        <p class="intro">Dragons, daydreams, and the lines in between.<br>Welcome to my corner of the sketchbook.</p>
+        <a class="sketch-button" href="work.html"><span>Open the sketchbook</span><span class="button-arrow" aria-hidden="true">↗</span></a>
+        <div class="hand-note hero-note" aria-hidden="true">start here, get a little lost <svg viewBox="0 0 100 55"><path d="M3 6c45-9 13 39 75 33m-14-11 19 12-21 9"/></svg></div>
+      </div>
+      <div class="hero-art">
+        <span class="art-note hand-note" aria-hidden="true">a dragon on the loose…</span>
+        <a class="art-sheet hero-sheet" href="work.html#dragon-01" aria-label="Explore the horned dragon drawing">
+          <span class="paper-tape" aria-hidden="true"></span>
+          <img src="assets/dragon-profile.png" width="768" height="1376" alt="Yue's blue-ink drawing of a dragon with long horns, layered scales, and fine cross-hatching." fetchpriority="high">
+        </a>
+        <span class="sketch-spark spark-one" aria-hidden="true">✧</span><span class="sketch-spark spark-two" aria-hidden="true">✧</span>
+        <div class="art-caption"><span>01 / A study in blue</span><span>ink on paper</span></div>
+        <svg class="hero-scribble" viewBox="0 0 240 80" aria-hidden="true"><path d="M7 58c30-45 127-65 183-32 39 23-105 54-106 28-1-15 52-24 53-8 2 14-34 23-47 9m105-24 26 5-16 16"/></svg>
+      </div>
+    </section>
+    <section class="home-bottom page-shell" aria-label="More from the sketchbook">
+      <p><span class="eyebrow">On these pages</span><span>Two dragons.<br>Countless little lines.</span></p>
+      <a class="next-sketch ink-hover" href="work.html#dragon-02"><img src="assets/dragon-coil.png" width="768" height="1376" alt="Preview of Yue's coiled dragon drawing."><span><span class="eyebrow">Next in the sketchbook</span><strong>A different kind of dragon</strong></span><span class="next-arrow" aria-hidden="true">↗</span></a>
+    </section>
+  </main>
+  <footer class="site-footer page-shell"><span>Made of paper & imagination.</span><button class="trail-toggle ink-hover" type="button" aria-pressed="true">Ink trail <span class="trail-status">on</span><span class="toggle-dot" aria-hidden="true"></span></button><span>© <span class="profile-name">Yue</span></span></footer>
+  <canvas id="ink-trail" aria-hidden="true"></canvas>
+</body>
+</html>
