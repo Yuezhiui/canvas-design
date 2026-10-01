@@ -6,15 +6,15 @@ Produce a standalone instruction another builder can use without reading this co
 
 Use the following structure when helpful; omit irrelevant sections rather than forcing every project into it.
 
-1. **Assignment and deliverable:** What to create, for whom, and whether the result is a working website, prototype, or design specification.
-2. **Purpose and visitor journey:** Primary audience, intended action, priorities, and success criteria.
-3. **Content and structure:** Pages or sections, their distinct roles, supplied copy, project facts, and real assets.
+1. **Assignment and deliverable:** What to create, for whom, and whether it is a working website/app, prototype, or design specification. Include requested targets and chosen toolkit; do not silently select additional platforms.
+2. **Purpose and user journey:** Primary audience, intended task, priorities, and success criteria.
+3. **Content and structure:** Pages, screens, or windows, their distinct roles, navigation, supplied copy, project facts, data, and real assets.
 4. **Creative concept:** The central idea and its relationship to the user's identity or offering.
 5. **Art direction:** Layout and hierarchy, typography roles, palette with functional roles, imagery, surfaces, and motif placement. Include precise values only when chosen and useful.
 6. **Asset specification:** Existing asset locations, planned image subjects and compositions, generation prompts when requested, aspect ratios, mobile crops, and transparent cutouts when appropriate.
-7. **Interaction behavior:** Triggers, visible outcomes, relevant states, interruption behavior, and touch, keyboard, and reduced-motion alternatives.
-8. **Implementation constraints:** Existing stack, necessary integrations, maintainability, and behavior-specific techniques. Separate required features from optional enhancements.
-9. **Verification:** Concrete checks for visual fit, content integrity, primary actions, mobile behavior, accessibility, and any agreed performance target.
+7. **Interaction behavior:** Triggers, visible outcomes, relevant states, interruption behavior, and touch, keyboard, and reduced-motion alternatives. For apps, include relevant back/dismissal, editing, pending-save, failure, and resume behavior.
+8. **Implementation constraints:** Existing stack and versions when known, necessary integrations, data/persistence boundaries, maintainability, and behavior-specific techniques. Separate required features from optional enhancements and prototype stubs.
+9. **Verification:** Concrete checks for visual fit, content integrity, primary actions, target-specific layout and input, accessibility, and any agreed performance target. Identify required builds, runtime checks, and unavailable targets without promising unperformed verification.
 10. **Unresolved inputs:** Only material missing inputs and explicitly identified assumptions.
 
 ## Writing rules
@@ -34,4 +34,6 @@ Use the following structure when helpful; omit irrelevant sections rather than f
 
 A builder should be able to answer: What am I building? What content belongs here? What makes this direction specific to this user? What must work? Which assets exist? What needs supplying? How do I judge the result?
 
-Return a complete copyable prompt when requested. Save it as a Markdown file when useful. In a website-building task, a concise working brief is enough unless the user also requested a separate master-prompt artifact.
+For an app prompt, transfer the relevant platform decisions into the prompt itself. An external builder should not need to install Canvas Design or fetch its references to learn that the app uses Flutter, saves locally, or needs keyboard operation. Keep exact SDK requirements consistent with the project; do not freeze every project to the versions seen during research.
+
+Return a complete copyable prompt when requested. Save it as a Markdown file when useful. In an implementation task, a concise working brief is enough unless the user also requested a separate master-prompt artifact.

@@ -19,7 +19,7 @@ When generation is requested and available, use the appropriate tool or image sk
 
 Start with a representative asset. Inspect its subject, composition, quality, palette, edges, and usability at the intended scale. Use a successful result as a visual reference for subsequent assets when the tool supports it. Keep the medium and treatment consistent while varying subjects and framing to suit their placement.
 
-Put navigation, important labels, and body copy in live page text instead of baking them into generated imagery. For diagrams or scientific subjects, do not treat plausible generated marks as verified factual detail.
+Put navigation, important labels, and body copy in live interface text instead of baking them into generated imagery. For diagrams or scientific subjects, do not treat plausible generated marks as verified factual detail.
 
 Use bounded, targeted revisions when a result misses its purpose. Revise the specific failing quality rather than regenerating indefinitely. If repeated attempts fail, propose an alternative composition or asset treatment.
 
@@ -37,9 +37,11 @@ Example for a confirmed graphite dragon direction:
 
 This is an example, not a default image prompt. For a transparent cutout, request transparency explicitly and use the generator's transparency setting rather than requesting a painted paper background.
 
-## Review the actual website
+## Review the actual interface
 
-When a preview environment is available, inspect desktop and a narrow mobile viewport. Use screenshots and interaction checks as evidence. Review the whole page, not just the hero, and examine critical forms or states where relevant. If preview tools are unavailable, inspect source and report the visual review as unverified.
+When a preview environment is available, inspect the requested targets. For websites, use wide and narrow browser viewports; for native apps, use the running device/emulator or desktop window. Use screenshots and interaction checks as evidence. Review the whole page or key screen flow, not just the opening, and examine critical forms or states where relevant. If preview tools are unavailable, inspect source and report the visual review as unverified.
+
+For apps, plan assets for actual control sizes, display scaling, themes, and packaged resource loading. Raster generation can supply illustrations or textures; it does not automatically produce a coherent vector icon system or a finished adaptive launcher icon. Use live toolkit controls for actions and labels, and provide suitable assets for requested targets.
 
 ### Fit and identity
 

@@ -4,16 +4,29 @@ Use this as a question bank and decision guide, not a mandatory survey. Ask only
 
 ## Understand the job
 
-- What should this website help you accomplish?
-- Who is it for, and what should that person do after visiting?
+- What should this website or app help you accomplish?
+- Who is it for, and what should that person do with it?
 - What work, product, service, or information should we prioritize?
-- Which parts of an existing site or brand should remain?
+- Which parts of an existing product or brand should remain?
 
 For a portfolio, distinguish attracting employers, freelance clients, collaborators, or an art audience. That changes project presentation, copy, and the primary action.
 
 For a store, learn what is being sold, what product facts and images exist, and whether checkout should function or be a demonstrative prototype.
 
 For a dashboard or service, ask about users' main tasks, necessary data, permissions where relevant, and important states. Visual preferences should support these tasks.
+
+## Application questions when relevant
+
+Start from the requested platform and project files; do not ask users to repeat an explicit stack choice. If they say only "app," ask whether they mean a browser, installed phone app, or desktop window. If they do not know, recommend a target from their audience and delivery needs.
+
+- What is the most important thing someone should be able to finish in this app?
+- Should their changes survive closing it, stay on this device, or be shared through an existing service?
+- Is this a working tool or a visual prototype? Which actions must function in the first version?
+- Which devices or operating systems are actually needed?
+
+Ask only what could change the build. Offline use matters for a travel journal; camera permissions matter for a scanner. Neither belongs in every interview. Infer routine navigation, resources, and styling decisions from the task and project.
+
+For example, "Build a dragon-themed Flutter journal" could need a first round about the primary writing flow, Android/iOS targets, and local saving. If the user already specified Android, offline entries, and the artwork, do not ask those again. Recommend a restrained dragon motif around the writing experience and proceed with ordinary reversible decisions.
 
 ## Interpret the creative request
 
@@ -38,7 +51,7 @@ Offer specific options for missing imagery: custom illustration, real photograph
 
 ## Constraints and tradeoffs
 
-Discover only constraints that matter: essential pages or features, existing platform, required integrations, delivery scope, asset limitations, mobile audience, accessibility needs, and maintenance expectations.
+Discover only constraints that matter: essential pages, screens, or features, existing platform, required integrations, delivery scope, asset limitations, input methods, accessibility needs, and maintenance expectations.
 
 Explain choices in user terms. For example: "An interactive dragon can make the opening memorable, but a static illustration keeps the site faster and puts your work first. I recommend a strong illustration with one restrained reveal."
 
