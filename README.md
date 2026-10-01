@@ -140,3 +140,7 @@ demo/                         Desktop and mobile screenshots
 The skill package passed metadata and reference-link validation. The dragon example was checked in Chrome for desktop and 320/390px layouts, asset and navigation loading, hover marks, trail painting and fading, trail preference persistence, keyboard dialog access, drawing export and clearing, and reduced-motion behavior. These checks are evidence for this example, not a guarantee for every site generated with the skill.
 
 Dragon illustrations supplied by Yue. The example preserves the original artwork files.
+
+## License
+
+[MIT License](LICENSE) · Copyright (c) 2026 Koshi.
